@@ -1,0 +1,6 @@
+dataset/
+dataset_lama/
+model/
+model_lama/
+
+*.wav
