@@ -27,6 +27,7 @@ def predict_speech_class(model_path, audio_file):
 
     # Prediksi menggunakan model yang dimuat
     prediction = model.predict(spectrogram)
+    print(prediction)
     
     # Hasil prediksi (misalnya: 0 atau 1 untuk klasifikasi biner)
     prediction_label = int(np.round(prediction[0][0]))  # Membulatkan prediksi ke 0 atau 1
@@ -38,6 +39,20 @@ def predict_speech_class(model_path, audio_file):
         print(f"The predicted class is: Incorrect pronunciation with confidence {confidence:.2f}%")
 
 # Contoh pemakaian
-model_path = 'model_lama/model_07. ta_fathah.keras'  # Nama file model untuk kelas A
+model_path = 'model/model_01. alif_fathah.keras'  # Nama file model untuk kelas A
 audio_file = 'a.wav'  # File audio yang akan diuji
-predict_speech_class(model_path, audio_file)
+predict_speech_class(model_path, "a.wav")
+# predict_speech_class(model_path, "aa.wav")
+# predict_speech_class(model_path, "aaa.wav")
+# predict_speech_class(model_path, "aaaa.wav")
+# predict_speech_class(model_path, "aaaaa.wav")
+# predict_speech_class(model_path, "aaaaaa.wav")
+# predict_speech_class(model_path, "aaaaaaa.wav")
+# predict_speech_class(model_path, "aaaaaaaa.wav")
+# predict_speech_class(model_path, "s.wav")
+# predict_speech_class(model_path, "ss.wav")
+# predict_speech_class(model_path, "sss.wav")
+# predict_speech_class(model_path, "d.wav")
+# predict_speech_class(model_path, "dd.wav")
+# predict_speech_class(model_path, "ddd.wav")
+# predict_speech_class(model_path, "ta.wav")
